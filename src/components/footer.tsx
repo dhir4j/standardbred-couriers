@@ -36,29 +36,30 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100 text-foreground border-t border-purple-200 no-print">
+    <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white border-t-4 border-orange-500 no-print">
       <div className="container py-12 px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="flex flex-col space-y-4">
-            <Link href="/" className="flex items-center space-x-2">
-              <Image src="/images/logo/logo.png" alt="Standardbred Couriers Logo" width={50} height={50} className="h-12 w-auto" />
-              <span className="text-xl font-bold font-headline gradient-text">
-                STANDARDBRED COURIERS
-              </span>
+            <Link href="/" className="flex items-center">
+              <Image src="/images/logo/Standardbred_Transparent.png" alt="Standardbred Couriers Logo" width={240} height={60} className="h-14 w-auto" />
             </Link>
-            <p className="text-muted-foreground text-sm">
-              Your trusted partner for professional and efficient delivery solutions.
+            <p className="text-slate-300 text-sm leading-relaxed">
+              Your trusted partner for professional and efficient delivery solutions across India.
             </p>
+            <div className="pt-2">
+              <p className="text-xs text-slate-400 font-semibold">GST No:</p>
+              <p className="text-sm text-orange-400 font-mono">03GDYPS5828D2ZY</p>
+            </div>
           </div>
           
           {/* Information Links */}
           <div className="flex flex-col space-y-4">
-            <h3 className="font-headline text-base font-semibold uppercase tracking-wider">Information</h3>
+            <h3 className="font-headline text-base font-semibold uppercase tracking-wider text-orange-400">Information</h3>
             <ul className="space-y-2">
               {infoLinks.map(link => (
                   <li key={link.href}>
-                      <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                      <Link href={link.href} className="text-sm text-slate-300 hover:text-orange-400 transition-colors">
                           {link.label}
                       </Link>
                   </li>
@@ -68,37 +69,40 @@ export default function Footer() {
 
           {/* Legal Links */}
           <div className="flex flex-col space-y-4">
-            <h3 className="font-headline text-base font-semibold uppercase tracking-wider">Legal</h3>
+            <h3 className="font-headline text-base font-semibold uppercase tracking-wider text-orange-400">Legal</h3>
             <ul className="space-y-2">
               {legalLinks.map(link => (
                   <li key={link.href}>
-                      <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                      <Link href={link.href} className="text-sm text-slate-300 hover:text-orange-400 transition-colors">
                           {link.label}
                       </Link>
                   </li>
               ))}
             </ul>
           </div>
-          
+
           {/* Contact Info */}
           <div className="flex flex-col space-y-4">
-            <h3 className="font-headline text-base font-semibold uppercase tracking-wider">Head Office</h3>
-            <p className="text-sm text-muted-foreground">
-                123 Logistics Boulevard,<br />
-                Suite 500, New York, NY 10001
+            <h3 className="font-headline text-base font-semibold uppercase tracking-wider text-orange-400">Head Office</h3>
+            <p className="text-sm text-slate-300 leading-relaxed">
+                SCO 47, Ground Floor<br />
+                Metro Plaza City Market<br />
+                Lohgarh Road, Zirakpur<br />
+                Mohali, SAS Nagar<br />
+                Punjab - 140603
             </p>
-            <p className="text-sm text-muted-foreground">
-              <a href="tel:18005551234" className="hover:text-primary transition-colors">+1-800-555-1234</a>
+            <p className="text-sm text-slate-300">
+              <a href="tel:18005551234" className="hover:text-orange-400 transition-colors">+1-800-555-1234</a>
             </p>
-            <p className="text-sm text-muted-foreground">
-              <a href="mailto:contact@standardbredcouriers.com" className="hover:text-primary transition-colors break-all">
+            <p className="text-sm text-slate-300">
+              <a href="mailto:contact@standardbredcouriers.com" className="hover:text-orange-400 transition-colors break-all">
                 contact@standardbredcouriers.com
               </a>
             </p>
           </div>
         </div>
-        
-        <div className="mt-12 border-t border-purple-200 pt-8 text-center text-sm text-muted-foreground">
+
+        <div className="mt-12 border-t border-slate-700 pt-8 text-center text-sm text-slate-400">
           <p>&copy; {new Date().getFullYear()} Standardbred Couriers. All Rights Reserved.</p>
         </div>
       </div>

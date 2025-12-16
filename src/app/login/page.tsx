@@ -89,12 +89,12 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex min-h-[calc(100vh-10rem)] items-center justify-center bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100 p-4 relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
-      <Card className="w-full max-w-md shadow-2xl shadow-purple-500/10 border-2 border-purple-100 relative z-10 bg-white">
+    <div className="flex min-h-[calc(100vh-10rem)] items-center justify-center bg-gradient-to-br from-orange-50 via-slate-50 to-orange-100 p-4 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-96 h-96 bg-orange-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-slate-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+      <Card className="w-full max-w-md shadow-2xl shadow-orange-500/10 border-2 border-orange-100 relative z-10 bg-white">
         <CardHeader className="text-center pb-8">
-          <div className="mx-auto gradient-primary text-white rounded-2xl p-4 w-fit mb-6 shadow-lg shadow-purple-500/30">
+          <div className="mx-auto gradient-primary text-white rounded-2xl p-4 w-fit mb-6 shadow-lg shadow-orange-500/30">
             <LogIn className="h-8 w-8" />
           </div>
           <CardTitle className="text-3xl font-headline">
@@ -131,7 +131,7 @@ export default function LoginPage() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full text-lg py-7 gradient-primary text-white hover:opacity-90 transition-opacity shadow-lg shadow-purple-500/30" disabled={form.formState.isSubmitting}>
+              <Button type="submit" className="w-full text-lg py-7 gradient-primary text-white hover:opacity-90 transition-opacity shadow-lg shadow-orange-500/30" disabled={form.formState.isSubmitting}>
                 {form.formState.isSubmitting ? "Logging in..." : "Login"}
               </Button>
             </form>

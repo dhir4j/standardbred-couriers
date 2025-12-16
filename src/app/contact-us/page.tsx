@@ -37,11 +37,11 @@ export default function ContactUsPage() {
   };
 
   return (
-    <div className="bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100 py-20 sm:py-28 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+    <div className="bg-gradient-to-br from-orange-50 via-slate-50 to-orange-100 py-20 sm:py-28 relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-96 h-96 bg-orange-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-slate-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
       <div className="container relative z-10">
-        <div className="bg-white p-12 rounded-3xl shadow-2xl shadow-purple-500/10 border-2 border-purple-100">
+        <div className="bg-white p-12 rounded-3xl shadow-2xl shadow-orange-500/10 border-2 border-orange-100">
             <div className="text-center pb-12">
               <h1 className="text-4xl sm:text-5xl font-headline font-bold">
                 <span className="gradient-text">Get in Touch</span>
@@ -69,7 +69,7 @@ export default function ContactUsPage() {
                     <FormField control={form.control} name="message" render={({ field }) => (
                       <FormItem><FormLabel>Message</FormLabel><FormControl><Textarea placeholder="Please type your message here..." {...field} rows={4} /></FormControl><FormMessage /></FormItem>
                     )} />
-                    <Button type="submit" size="lg" className="w-full text-lg py-7 gradient-primary text-white hover:opacity-90 transition-opacity shadow-lg shadow-purple-500/30">
+                    <Button type="submit" size="lg" className="w-full text-lg py-7 gradient-primary text-white hover:opacity-90 transition-opacity shadow-lg shadow-orange-500/30">
                       <Send className="mr-2 h-5 w-5" />
                       Send Message
                     </Button>
@@ -83,8 +83,8 @@ export default function ContactUsPage() {
                 <p className="text-muted-foreground text-lg">You can also reach us through the following channels. We're available during standard business hours.</p>
 
                 <div className="space-y-6">
-                    <div className="flex items-start gap-5 p-6 rounded-2xl bg-gradient-to-br from-white to-purple-50 border-2 border-purple-100 hover:border-purple-300 transition-all duration-300 hover:shadow-lg">
-                        <div className="flex items-center justify-center w-14 h-14 rounded-2xl gradient-primary text-white shrink-0 shadow-lg shadow-purple-500/30">
+                    <div className="flex items-start gap-5 p-6 rounded-2xl bg-gradient-to-br from-white to-orange-50 border-2 border-orange-100 hover:border-orange-300 transition-all duration-300 hover:shadow-lg">
+                        <div className="flex items-center justify-center w-14 h-14 rounded-2xl gradient-primary text-white shrink-0 shadow-lg shadow-orange-500/30">
                           <MapPin className="h-7 w-7" />
                         </div>
                         <div>
@@ -92,8 +92,8 @@ export default function ContactUsPage() {
                           <p className="text-muted-foreground text-lg leading-relaxed">123 Logistics Boulevard,<br/>Suite 500, New York, NY 10001</p>
                         </div>
                     </div>
-                    <div className="flex items-start gap-5 p-6 rounded-2xl bg-gradient-to-br from-white to-purple-50 border-2 border-purple-100 hover:border-purple-300 transition-all duration-300 hover:shadow-lg">
-                        <div className="flex items-center justify-center w-14 h-14 rounded-2xl gradient-primary text-white shrink-0 shadow-lg shadow-purple-500/30">
+                    <div className="flex items-start gap-5 p-6 rounded-2xl bg-gradient-to-br from-white to-orange-50 border-2 border-orange-100 hover:border-orange-300 transition-all duration-300 hover:shadow-lg">
+                        <div className="flex items-center justify-center w-14 h-14 rounded-2xl gradient-primary text-white shrink-0 shadow-lg shadow-orange-500/30">
                           <Phone className="h-7 w-7" />
                         </div>
                         <div>
@@ -101,8 +101,8 @@ export default function ContactUsPage() {
                           <p className="text-muted-foreground text-lg"><a href="tel:18005551234" className="hover:text-primary transition-colors">+1-800-555-1234</a></p>
                         </div>
                     </div>
-                    <div className="flex items-start gap-5 p-6 rounded-2xl bg-gradient-to-br from-white to-purple-50 border-2 border-purple-100 hover:border-purple-300 transition-all duration-300 hover:shadow-lg">
-                        <div className="flex items-center justify-center w-14 h-14 rounded-2xl gradient-primary text-white shrink-0 shadow-lg shadow-purple-500/30">
+                    <div className="flex items-start gap-5 p-6 rounded-2xl bg-gradient-to-br from-white to-orange-50 border-2 border-orange-100 hover:border-orange-300 transition-all duration-300 hover:shadow-lg">
+                        <div className="flex items-center justify-center w-14 h-14 rounded-2xl gradient-primary text-white shrink-0 shadow-lg shadow-orange-500/30">
                           <Mail className="h-7 w-7" />
                         </div>
                         <div>

@@ -162,24 +162,24 @@ const deliveryServices = [
 
 const testimonials = [
   {
-    name: "Sarah Chen",
-    role: "Operations Director",
-    company: "TechCorp Inc.",
-    quote: "Standardbred has transformed our logistics. The platform is intuitive and delivery times are reliable.",
+    name: "Rajesh Kumar",
+    role: "Operations Manager",
+    company: "TechVista Solutions, Chandigarh",
+    quote: "Standardbred has transformed our logistics operations. Their real-time tracking and timely deliveries have made them our go-to courier partner.",
     rating: 5
   },
   {
-    name: "Michael Rodriguez",
-    role: "Supply Chain Manager",
-    company: "GlobalTrade Solutions",
-    quote: "Great courier service. The real-time tracking gives us the visibility we need for our operations.",
+    name: "Priya Sharma",
+    role: "E-commerce Head",
+    company: "ShopKart India, Mohali",
+    quote: "Excellent service! The team is professional and delivery times are consistently reliable. Our customers love the seamless shipping experience.",
     rating: 5
   },
   {
-    name: "Emily Watson",
-    role: "E-commerce Owner",
-    company: "Boutique Online",
-    quote: "Our customers appreciate the fast shipping. Standardbred's service has helped improve our customer satisfaction.",
+    name: "Amit Patel",
+    role: "Supply Chain Director",
+    company: "IndiaLogistics Pvt Ltd",
+    quote: "We've been using Standardbred for our B2B deliveries across Punjab. Their service quality and customer support are outstanding.",
     rating: 5
   },
 ];
@@ -280,19 +280,6 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-8">
-              <motion.div
-                className="inline-block"
-                initial="hidden"
-                animate="visible"
-                variants={fadeInUp}
-                transition={{ duration: 0.5 }}
-              >
-                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100 text-orange-700 font-semibold text-sm border border-orange-300">
-                  <Award className="w-4 h-4" />
-                  Trusted Courier Service Since 2019
-                </span>
-              </motion.div>
-
               <motion.h1
                 className="text-5xl md:text-7xl font-bold leading-tight text-slate-900"
                 initial="hidden"
