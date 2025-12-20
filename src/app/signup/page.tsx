@@ -85,19 +85,23 @@ export default function SignupPage() {
   };
 
   return (
-    <div className="flex min-h-[calc(100vh-10rem)] items-center justify-center bg-secondary p-4">
-      <Card className="w-full max-w-md shadow-md border">
-        <CardHeader className="text-center">
-            <div className="mx-auto bg-primary/10 text-primary rounded-sm p-3 w-fit mb-4">
-                <UserPlus className="h-7 w-7" />
+    <div className="flex min-h-[calc(100vh-10rem)] items-center justify-center bg-gradient-to-br from-orange-50 via-slate-50 to-orange-100 p-4 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-96 h-96 bg-orange-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-slate-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+      <Card className="w-full max-w-md shadow-2xl shadow-orange-500/10 border-2 border-orange-100 relative z-10 bg-white">
+        <CardHeader className="text-center pb-6 sm:pb-8">
+            <div className="mx-auto gradient-primary text-white rounded-2xl p-4 w-fit mb-6 shadow-lg shadow-orange-500/30">
+                <UserPlus className="h-8 w-8" />
             </div>
-          <CardTitle className="text-2xl font-headline">Create a Customer Account</CardTitle>
-          <CardDescription>Register for an account to book and manage shipments.</CardDescription>
+          <CardTitle className="text-2xl sm:text-3xl font-headline">
+            <span className="gradient-text">Create a Customer Account</span>
+          </CardTitle>
+          <CardDescription className="text-base sm:text-lg mt-2">Register for an account to book and manage shipments.</CardDescription>
         </CardHeader>
         <CardContent>
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3 sm:space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <FormField
                   control={form.control}
                   name="firstName"
@@ -151,7 +155,7 @@ export default function SignupPage() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full text-lg py-6" disabled={form.formState.isSubmitting}>
+              <Button type="submit" className="w-full text-base sm:text-lg py-6 sm:py-7 gradient-primary text-white hover:opacity-90 transition-opacity shadow-lg shadow-orange-500/30" disabled={form.formState.isSubmitting}>
                  {form.formState.isSubmitting ? "Registering..." : "Register"}
               </Button>
             </form>

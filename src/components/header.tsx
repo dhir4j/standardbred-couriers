@@ -67,15 +67,15 @@ export default function Header() {
             ease: "easeInOut"
           }}
         />
-        <div className="container flex h-11 items-center justify-between text-sm relative z-10">
-          <div className="flex gap-6">
+        <div className="container flex h-11 items-center justify-between text-xs sm:text-sm relative z-10">
+          <div className="flex gap-3 sm:gap-6">
              <motion.a
                href="mailto:contact@standardbredcouriers.com"
-               className="flex items-center gap-2 hover:text-orange-400 transition-colors"
+               className="flex items-center gap-1 sm:gap-2 hover:text-orange-400 transition-colors"
                whileHover={{ scale: 1.05 }}
                whileTap={{ scale: 0.95 }}
              >
-                <Mail className="h-4 w-4" />
+                <Mail className="h-3 w-3 sm:h-4 sm:w-4" />
                 <span className="hidden md:inline">contact@standardbredcouriers.com</span>
              </motion.a>
              <motion.a
@@ -122,7 +122,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="container flex h-24 items-center">
+      <div className="container flex h-20 lg:h-24 items-center">
         <motion.div
           className="mr-auto flex items-center"
           initial={{ opacity: 0, x: -20 }}
@@ -137,9 +137,9 @@ export default function Header() {
               <Image
                 src="/images/logo/Standardbred_Transparent.png"
                 alt="Standardbred Couriers Logo"
-                width={280}
-                height={80}
-                className="h-16 w-auto"
+                width={420}
+                height={120}
+                className="h-16 lg:h-24 w-auto"
                 priority
               />
             </motion.div>
